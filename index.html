@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JARVIS</title>
+<style>
+body{background:black;color:#00ffff;text-align:center;font-family:Arial;padding-top:100px}
+h1{font-size:50px}
+button{padding:15px 30px;font-size:20px;background:#00ffff;border:none;border-radius:20px}
+</style>
+</head>
+<body>
+<h1>JARVIS</h1>
+<p>Hello Sir, I am JARVIS</p>
+<button onclick="speak()">Talk to JARVIS</button>
+<script>
+function speak(){
+let s=new SpeechSynthesisUtterance("Hello Sir, I am Jarvis, how can I help you");
+speechSynthesis.speak(s);
+}
+</script>
+</body>
+</html>
